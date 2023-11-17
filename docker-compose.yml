@@ -46,10 +46,10 @@ services:
   python:
     image: "bike-brain-python"
     container_name: "bike-python"
-    build: "./bike"
+    build: "./vteam-example-bike"
     working_dir: "/bike/app"
     volumes:
-      - "./bike/app/:/bike/app"
+      - "./vteam-example-bike/app/:/bike/app"
     links:
       - "express:express-server"
     command: python app.py
@@ -62,10 +62,10 @@ services:
   web-client:
     image: "simple-map"
     container_name: "simple-map"
-    build: "./simple_map"
+    build: "./vteam-example-simple-map"
     working_dir: "/usr/share/nginx/html/"
     volumes:
-      - "./simple_map/src/:/usr/share/nginx/html/"
+      - "./vteam-example-simple-map/src/:/usr/share/nginx/html/"
     ports:
       - "5000:80"
     links:

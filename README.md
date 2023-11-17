@@ -7,3 +7,6 @@ Förslagsvis så representerar detta "root-repot". Jag tänker att det faller si
 De individuella repon som läggs till behöver ha liknande strukturer för att göra det enklare att koppla ihop och starta de via docker-compose. I detta repot så hämtas MariaDB i docker-compose, och följer inte samma struktur som de andra repon gör. Exakt vilken väg man väljer att gå med just databasen tror jag inte behöver bestämmas i startskedet, utan man kan se allt eftersom vad som verkar smidigast/smartast.
 
 Exempel på de individuella repona:
+
+https://github.com/p0ntan/vteam-example-simple-map
+https://github.com/p0ntan/vteam-example-bike
