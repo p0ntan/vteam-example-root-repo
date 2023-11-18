@@ -1,11 +1,6 @@
 #!/usr/bin/env bash
 #
-# Put code here to build and setup the repo
-#
-
-#!/usr/bin/env bash
-#
-# Bash script for working with routes on server
+# Bash script for setting up the system
 #
 # Exit values:
 #  0 on success
@@ -30,8 +25,8 @@ function usage
 ""
 "Commands:"
 ""
-"   up                   Start the container."
-"   down                 Shut down the container."
+"   up                   Start the system."
+"   down                 Shut down the system."
 ""
 ""
 "Options:"
