@@ -50,6 +50,7 @@ services:
     working_dir: "/bike/app"
     volumes:
       - "./vteam-example-bike/app/:/bike/app"
+      - "/bike/app/src/__pycache__"
     links:
       - "express:express-server"
     command: python app.py
