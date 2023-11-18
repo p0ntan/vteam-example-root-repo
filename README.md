@@ -8,8 +8,8 @@ De individuella repon som läggs till behöver ha liknande strukturer för att g
 
 Exempel på de individuella repona:
 
-https://github.com/p0ntan/vteam-example-simple-map
-https://github.com/p0ntan/vteam-example-bike
+- https://github.com/p0ntan/vteam-example-simple-map
+- https://github.com/p0ntan/vteam-example-bike
 
 ## Sätta ihop och starta systemet
 I detta repo ligger ett bash-skript, man kan starta hela systemet med:
