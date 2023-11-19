@@ -88,12 +88,7 @@ function app-up
 function app-down
 {
     # Close the container
-    docker-compose down -v
-
-    # Remove the image
-    docker rmi simple-map
-    docker rmi bike-brain-python
-    docker rmi bike-brain-express
+    docker-compose down -v --rmi all
 
     # Remove the folders
     rm -rf vteam-example-bike/
