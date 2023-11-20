@@ -46,7 +46,7 @@ services:
   python:
     image: "bike-brain-python"
     container_name: "bike-python"
-    build: "./bike-braine"
+    build: "./bike-brain"
     working_dir: "/bike/app"
     volumes:
       - "./bike-brain/app/:/bike/app"

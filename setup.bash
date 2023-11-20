@@ -74,10 +74,6 @@ function version
 #
 function app-up
 {
-    # Download all the repos needed
-    git clone git@github.com:p0ntan/vteam-example-bike.git
-    git clone git@github.com:p0ntan/vteam-example-simple-map.git
-
     # Start the system
     docker-compose up -d --build
 }
@@ -89,10 +85,6 @@ function app-down
 {
     # Close the container
     docker-compose down -v --rmi all
-
-    # Remove the folders
-    rm -rf vteam-example-bike/
-    rm -rf vteam-example-simple-map/
 }
 
 #
