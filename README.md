@@ -4,14 +4,13 @@ Förslagsvis så representerar detta "root-repot". Jag tänker att det faller si
 
 ## Individuella repon
 
-De individuella repon som läggs till behöver ha liknande strukturer för att göra det enklare att koppla ihop och starta de via docker-compose. I detta repot så hämtas MariaDB i docker-compose, och följer inte helt samma struktur som de andra repon gör. Exakt vilken väg man väljer att gå med just databasen tror jag inte behöver bestämmas i startskedet, utan man kan se allt eftersom vad som verkar smidigast/smartast.
+De individuella repon som läggs till behöver ha liknande strukturer för att göra det enklare att koppla ihop och starta de via docker-compose.
 
 Exempel på de individuella repona:
 
 - https://github.com/p0ntan/vteam-example-simple-map
 - https://github.com/p0ntan/vteam-example-bike
-
-Vill man så kan man ha ett root repo som inte innehåller någonting alls förutom "setup"-filer, och låta alla repon vara submodules. En fördel med det är att det blir ju en ännu tydligare gräns mellan olika delar och att det kan bli enklare att köra tester/CI-kedja på endast express-servern t ex.
+- https://github.com/p0ntan/vteam-example-server
 
 ## Klona repot
 
