@@ -9,7 +9,7 @@ services:
     container_name: "mariadb"
     working_dir: "/docker-entrypoint-initdb.d"
     volumes:
-      - ./mariadb/:/docker-entrypoint-initdb.d
+      - ./server/mariadb/:/docker-entrypoint-initdb.d
     environment:
       MARIADB_ALLOW_EMPTY_ROOT_PASSWORD: 1
     healthcheck: # TODO check more in detail what healthcheck times does (start_period, interval etc.)

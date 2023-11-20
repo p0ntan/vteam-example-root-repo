@@ -4,3 +4,6 @@
 [submodule "simple-map"]
 	path = simple-map
 	url = git@github.com:p0ntan/vteam-example-simple-map.git
+[submodule "server"]
+	path = server
+	url = git@github.com:p0ntan/vteam-example-server.git
