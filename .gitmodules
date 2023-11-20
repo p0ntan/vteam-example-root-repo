@@ -7,6 +7,3 @@
 [submodule "server"]
 	path = server
 	url = git@github.com:p0ntan/vteam-example-server.git
-[submodule "test"]
-	path = test
-	url = https://github.com/kiwijos/vteam-demo-app.git
