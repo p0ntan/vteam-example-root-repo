@@ -83,8 +83,9 @@ function app-up
 #
 function app-down
 {
-    # Close the container
-    docker-compose down -v --rmi all
+    # Close the container and remove the images
+    # Using --rmi local only removes the images that hasn't been "named" in docker-compose
+    docker-compose down -v --rmi local
 }
 
 #

@@ -21,8 +21,7 @@ services:
     restart: 
         "always"
 
-  express:
-    image: "bike-brain-express"
+  express: # Not adding image-name here because it is local
     container_name: "express"
     build: "./server"
     working_dir: "/express/app"
@@ -43,8 +42,7 @@ services:
     restart:
         "on-failure"
 
-  python:
-    image: "bike-brain-python"
+  python: # Not adding image-name here because it is local
     container_name: "bike-python"
     build: "./bike-brain"
     working_dir: "/bike/app"
@@ -60,8 +58,7 @@ services:
     restart:
       "on-failure"
 
-  web-client:
-    image: "simple-map"
+  web-client: # Not adding image-name here because it is local
     container_name: "simple-map"
     build: "./simple-map"
     working_dir: "/usr/share/nginx/html/"
