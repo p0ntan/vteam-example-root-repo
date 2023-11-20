@@ -13,6 +13,19 @@ Exempel på de individuella repona:
 
 Vill man så kan man ha ett root repo som inte innehåller någonting alls förutom "setup"-filer, och låta alla repon vara submodules. En fördel med det är att det blir ju en ännu tydligare gräns mellan olika delar och att det kan bli enklare att köra tester/CI-kedja på endast express-servern t ex.
 
+## Klona repot
+
+Klonar man repot med kommandot:
+
+```
+git clone <url>
+```
+Hämtas repot ner, men mapparna till alla submoduler kommer vara tomma. Använder man istället:
+```
+git clone --recursive <url>
+```
+Klonas även alla submoduler. Värt att nämna är att de är frånkopplade från sin egen main-branch när de läggs till, något att tänka på om man börjar jobba med en submodul.
+
 ## Sätta ihop och starta systemet
 I detta repo ligger ett bash-skript, man kan starta hela systemet med:
 
