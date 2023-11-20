@@ -1,0 +1,6 @@
+[submodule "bike-brain"]
+	path = bike-brain
+	url = git@github.com:p0ntan/vteam-example-bike.git
+[submodule "simple-map"]
+	path = simple-map
+	url = git@github.com:p0ntan/vteam-example-simple-map.git

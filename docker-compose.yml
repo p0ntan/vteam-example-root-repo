@@ -5,7 +5,7 @@ volumes:
 
 services:
   mariadb:
-    image: "mariadb:latest"
+    image: "mariadb:10.11.6"
     container_name: "mariadb"
     working_dir: "/docker-entrypoint-initdb.d"
     volumes:
@@ -46,10 +46,10 @@ services:
   python:
     image: "bike-brain-python"
     container_name: "bike-python"
-    build: "./vteam-example-bike"
+    build: "./bike-braine"
     working_dir: "/bike/app"
     volumes:
-      - "./vteam-example-bike/app/:/bike/app"
+      - "./bike-brain/app/:/bike/app"
       - "/bike/app/src/__pycache__"
     links:
       - "express:express-server"
@@ -63,10 +63,10 @@ services:
   web-client:
     image: "simple-map"
     container_name: "simple-map"
-    build: "./vteam-example-simple-map"
+    build: "./simple-map"
     working_dir: "/usr/share/nginx/html/"
     volumes:
-      - "./vteam-example-simple-map/src/:/usr/share/nginx/html/"
+      - "./simple-map/src/:/usr/share/nginx/html/"
     ports:
       - "5000:80"
     links:
