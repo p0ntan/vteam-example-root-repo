@@ -21,7 +21,7 @@ git clone <url>
 ```
 Hämtas repot ner, men mapparna till alla submoduler kommer vara tomma. Använder man istället:
 ```
-git clone --recursive <url>
+git clone --recursive https://github.com/p0ntan/vteam-example-root-repo.git
 ```
 Klonas även alla submoduler. Värt att nämna är att de är frånkopplade från sin egen main-branch när de läggs till, något att tänka på om man börjar jobba med en submodul.
 
