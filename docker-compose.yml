@@ -54,6 +54,7 @@ services:
     environment:
       - PYTHONDONTWRITEBYTECODE=1
       - API_URL=http://express-server:1337/v1
+      - PYTEST_ADDOPTS=-p no:cacheprovider
     command: python app.py
     depends_on:
       express:
